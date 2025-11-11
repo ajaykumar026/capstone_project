@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Colorful Navbar</title>
+  <style>
+    /* ==== BASIC RESET ==== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #fff;
+    }
+
+    /* ==== NAVBAR ==== */
+    header {
+      background: linear-gradient(90deg, #ffb8b8, #ffcece, #ffe3e3); /* Light reddish gradient */
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+    }
+
+    /* ==== LOGO ==== */
+    .logo {
+      font-size: 24px;
+      font-weight: 700;
+      color: #ff4b5c;
+      letter-spacing: 1px;
+    }
+
+    /* ==== NAV LINKS ==== */
+    .nav-links {
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      font-size: 16px;
+      transition: 0.3s;
+      position: relative;
+      padding: 5px 0;
+    }
+
+    /* ==== ACTIVE & HOVER EFFECT ==== */
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      width: 0%;
+      height: 2px;
+      background: #ff4b5c;
+      transition: width 0.3s;
+    }
+
+    .nav-links a:hover::after,
+    .nav-links a.active::after {
+      width: 100%;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #ff4b5c;
+    }
+
+    /* ==== BUTTON (optional) ==== */
+    .btn {
+      background: #ff4b5c;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #ff6b6b;
+    }
+
+    /* ==== RESPONSIVE ==== */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Zomoto+</div>
+
+      <div class="nav-links">
+        <a href="#" class="active">Home</a>
+        <a href="#">Restaurants</a>
+        <a href="#">Dishes</a>
+        <a href="#">Cart</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <button class="btn">Login</button>
+    </nav>
+  </header>
+
+  <section style="padding:60px;text-align:center;">
+    <h2>Welcome to Zomoto+</h2>
+    <p>Your favorite meals delivered fresh & fast 🍽️</p>
+  </section>
+
+  <script>
+    // Active link toggle
+    const links = document.querySelectorAll('.nav-links a');
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        links.forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
+
+</body>
+</html>
