@@ -1,155 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Snackzy Food Website</title>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Colorful Navbar</title>
-  <style>
-    /* ==== BASIC RESET ==== */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
 
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: #fff;
-    }
+  
+  <div class="navbar">
+    <div class="logo">Snackzy</div>
 
-    /* ==== NAVBAR ==== */
-    header {
-      background: linear-gradient(90deg, #ffb8b8, #ffcece, #ffe3e3); /* Light reddish gradient */
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
+    <div class="nav_links">
+      <a href="index.html" class="active">Home</a>
+      <a href="Restaurants.html">Restaurants</a>
+      <a href="Dishes.html">Dishes</a>
+      <a href="Cart.html">Cart</a>
+      <a href="Contact.html">Contact</a>
+    </div>
 
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 50px;
-    }
+    <a href="login.html"><button class="btn_login">Login</button></a>
+  </div>
 
-    /* ==== LOGO ==== */
-    .logo {
-      font-size: 24px;
-      font-weight: 700;
-      color: #ff4b5c;
-      letter-spacing: 1px;
-    }
+  <div class="space"></div>
 
-    /* ==== NAV LINKS ==== */
-    .nav-links {
-      display: flex;
-      gap: 25px;
-    }
 
-    .nav-links a {
-      text-decoration: none;
-      color: #333;
-      font-weight: 500;
-      font-size: 16px;
-      transition: 0.3s;
-      position: relative;
-      padding: 5px 0;
-    }
-
-    /* ==== ACTIVE & HOVER EFFECT ==== */
-    .nav-links a::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: -3px;
-      width: 0%;
-      height: 2px;
-      background: #ff4b5c;
-      transition: width 0.3s;
-    }
-
-    .nav-links a:hover::after,
-    .nav-links a.active::after {
-      width: 100%;
-    }
-
-    .nav-links a:hover,
-    .nav-links a.active {
-      color: #ff4b5c;
-    }
-
-    /* ==== BUTTON (optional) ==== */
-    .btn {
-      background: #ff4b5c;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 6px;
-      cursor: pointer;
-      font-weight: 500;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background: #ff6b6b;
-    }
-
-    /* ==== RESPONSIVE ==== */
-    @media (max-width: 768px) {
-      nav {
-        flex-direction: column;
-        gap: 10px;
-      }
-      .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <nav>
-      <div class="logo">Zomoto+</div>
-
-      <div class="nav-links">
-        <a href="#" class="active">Home</a>
-        <a href="#">Restaurants</a>
-        <a href="#">Dishes</a>
-        <a href="#">Cart</a>
-        <a href="#">Contact</a>
+  <section class="welcome_section">
+    <div class="welcome_content">
+      <h1>Welcome to <span>Snackzy 🍕</span></h1>
+      <p>Your favorite meals delivered <strong>hot & fresh</strong> right to your door!</p>
+      <div class="btn_group">
+        <a href="Restaurants.html" class="btn_order">Order Now</a>
+        <a href="Dishes.html" class="btn_explore">Explore Menu</a>
       </div>
-
-      <button class="btn">Login</button>
-    </nav>
-  </header>
-
-  <section style="padding:60px;text-align:center;">
-    <h2>Welcome to Zomoto+</h2>
-    <p>Your favorite meals delivered fresh & fast 🍽️</p>
+    </div>
   </section>
 
-  <script>
-    // Active link toggle
-    const links = document.querySelectorAll('.nav-links a');
-    links.forEach(link => {
-      link.addEventListener('click', () => {
-        links.forEach(l => l.classList.remove('active'));
-        link.classList.add('active');
-      });
-    });
-  </script>
-</body>
-</html>
+  <section class="mini_dishes">
+    <div class="dish_grid">
+
+      <div class="dish_item">
+        <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/CategoriesV1/1c73a70c-fcc4-4d4f-af5e-7db2e9feec32_LunchFeastCoke.png?ver=V0.0.1" alt="Lunch Feast">
+        <p>Lunch Feast</p>
+      </div>
+
+      <div class="dish_item">
+        <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/CategoriesV1/256103bc-8a01-4637-86b3-d9e63e5aab26_PizzaManianew.png?ver=V0.0.1" alt="Pizza Mania">
+        <p>Pizza Mania</p>
+      </div>
+
+      <div class="dish_item">
+        <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/CategoriesV1/76ea3002-6964-4834-9d90-bb602184577c_garlicbread.jpg?ver=V0.0.1" alt="Garlic Bread">
+        <p>Garlic Bread</p>
+      </div>
+
+      <div class="dish_item">
+        <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/CategoriesV1/d4426039-5b76-45a9-8940-fc268f2fbab5_cheesevolcano.jpg?ver=V0.0.1" alt="Cheese Volcano">
+        <p>Cheese Volcano</p>
+      </div>
+
+      <div class="dish_item">
+        <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/CategoriesV1/5ee24e9d-bfae-47c0-ad1e-5fb6bb79879e_cheeseburst.jpg?ver=V0.0.1" alt="Cheese Burst">
+        <p>Cheese Burst</p>
+      </div>
+
+      <div class="dish_item">
+        <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/CategoriesV1/09d84743-6fb5-42eb-9ced-43b68fba3986_olddesertssss.png?ver=V0.0.1" alt="Desserts">
+        <p>Desserts</p>
+      </div>
+
+      <div class="dish_item">
+        <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/CategoriesV1/eb9b2f31-6631-49c0-a6d7-c3e6d95b434d_HotDeals.png?ver=V0.0.1" alt="Hot Deals">
+        <p>Hot Deals</p>
+      </div>
+
+      <div class="dish_item">
+        <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/CategoriesV1/ef4bdd28-8ff9-47e8-8879-bf04b8f20850_BestSellerrs.png?ver=V0.0.1" alt="Best Sellers">
+        <p>Best Sellers</p>
+      </div>
+
+    </div>
+  </section>
+  <hr style="border: 2px solid tomato;">
+  <hr style="border: 2px solid tomato;">
+
+<section class="popular_dishes">
+  <h2>Popular Dishes</h2>
+  <div class="dishes_grid">
+
+    <div class="dish_card">
+      <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/WebHomeProductV1/05e8ba85-4444-4c19-b085-8012f1baf0b4_margherita_side.webp?ver=V0.0.1" alt="Margherita">
+      <h3>Margherita</h3>
+      <p class="price">₹429</p>
+      <button class="btn_add">Add to Cart</button>
+    </div>
+
+    <div class="dish_card">
+      <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/WebHomeProductV1/a52b70f2-01cb-42b8-ae4f-566df999115c_farmhouse_side.webp?ver=V0.0.1" alt="Farmhouse">
+      <h3>Farmhouse</h3>
+      <p class="price">₹449</p>
+      <button class="btn_add">Add to Cart</button>
+    </div>
+
+    <div class="dish_card">
+      <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/WebHomeProductV1/ff2e39b8-87cc-4f3f-a2f5-06198a85f3df_peppy_paneer_side.webp?ver=V0.0.1" alt="Peppy Paneer">
+      <h3>Peppy Paneer</h3>
+      <p class="price">₹399</p>
+      <button class="btn_add">Add to Cart</button>
+    </div>
+
+    <div class="dish_card">
+      <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/WebHomeProductV1/a542d031-5fc8-4902-bbb3-25eebd3ace7e_veggie_paradise_side.webp?ver=V0.0.1" alt="Veggie Paradise">
+      <h3>Veggie Paradise</h3>
+      <p class="price">₹429</p>
+      <button class="btn_add">Add to Cart</button>
+    </div>
+
+    <div class="dish_card">
+      <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/WebHomeProductV1/8abd61ff-024b-45fe-a221-6b72d601cb49_indi_paneer_side_full.webp?ver=V0.0.1" alt="Indi Tandoori Paneer">
+      <h3>Indi Tandoori Paneer</h3>
+      <p class="price">₹499</p>
+      <button class="btn_add">Add to Cart</button>
+    </div>
+
+    <div class="dish_card">
+      <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/WebHomeProductV1/e56f74ff-ae78-453d-bf34-3dbba00c8e6a_PM_onion_side.webp?ver=V0.0.1" alt="Onion Pizza">
+      <h3>Onion Pizza</h3>
+      <p class="price">₹249</p>
+      <button class="btn_add">Add to Cart</button>
+    </div>
+
+    <div class="dish_card">
+      <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/WebHomeProductV1/a1b4e8c0-3cb5-44f2-b6e3-68ad58ce6ff2_zingy_parcel_v_side.webp?ver=V0.0.1" alt="Zingy Parcel Veg">
+      <h3>Zingy Parcel Veg</h3>
+      <p class="price">₹129</p>
+      <button class="btn_add">Add to Cart</button>
+    </div>
+
+    <div class="dish_card">
+      <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/WebHomeProductV1/936e255f-57b3-493b-b754-964045a6024a_veg_taco_side.webp?ver=V0.0.1" alt="Veg Taco">
+      <h3>Veg Taco</h3>
+      <p class="price">₹199</p>
+      <button class="btn_add">Add to Cart</button>
+    </div>
+
+    <div class="dish_card">
+      <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/WebHomeProductV1/2a91f81d-4a24-4387-95fe-0a173ae450e3_paneer_GB_side.webp?ver=V0.0.1" alt="Paneer Garlic Bread">
+      <h3>Paneer Garlic Bread</h3>
+      <p class="price">₹179</p>
+      <button class="btn_add">Add to Cart</button>
+    </div>
+
+    <div class="dish_card">
+      <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/WebHomeProductV1/c6eb34a5-6f93-4b1b-8b3d-e685a1316031_zingy_parcel_nv_side.webp?ver=V0.0.1" alt="Zingy Parcel Non-Veg">
+      <h3>Zingy Parcel Non-Veg</h3>
+      <p class="price">₹149</p>
+      <button class="btn_add">Add to Cart</button>
+    </div>
+
+    <div class="dish_card">
+      <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/WebHomeProductV1/31b713fd-7986-41cc-b963-6d698a34a686_Corn_n_Cheese_Side.webp?ver=V0.0.1" alt="Corn n Cheese Pizza">
+      <h3>Corn Cheese Pizza</h3>
+      <p class="price">₹279</p>
+      <button class="btn_add">Add to Cart</button>
+    </div>
+
+    <div class="dish_card">
+      <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/WebHomeProductV1/0d5e3dd4-1557-42d6-8dae-5298d3b1d6c9_PP_corn_side.webp?ver=V0.0.1" alt="Peppy Paneer Corn Pizza">
+      <h3>Peppy Paneer Corn Pizza</h3>
+      <p class="price">₹329</p>
+      <button class="btn_add">Add to Cart</button>
+    </div>
+
+  </div>
+</section>
+<hr style="border: 2px solid tomato;">
+<hr style="border: 2px solid tomato;">
+
+<section class="popular_dishes">
+  <h2>Best Dishes in your City</h2>
+  <div class="dishes_grid">
+
+    <div class="dish_card">
+      <img src="https://b.zmtcdn.com/data/pictures/4/19124644/62f45b8117e13830cfc35d5491524870_featured_v2.jpg?output-format=webp" alt="McDonald's">
+      <h3>McDonald's</h3>
+      <p class="price">₹499</p>
+      <button class="btn_add">Add to Cart</button>
+    </div>
+
+    <div class="dish_card">
+      <img src="https://b.zmtcdn.com/data/pictures/7/19086887/8e3608f163dd5c4741528fc6b5bc2f32_featured_v2.jpg?output-format=webp" alt="Bikanervala">
+      <h3>Bikanervala</h3>
+      <p class="price">₹449</p>
+      <button class="btn_add">Add to Cart</button>
+    </div>
+
+    <div class="dish_card">
+      <img src="https://b.zmtcdn.com/data/pictures/8/20249328/ab18a45a0e90afd12be7cb6ab51e5fc6_featured_v2.jpg" alt="Burger Singh - Big Punjabi Burgers">
+      <h3>Burger Singh - Big Punjabi Burgers</h3>
+      <p class="price">₹399</p>
+      <button class="btn_add">Add to Cart</button>
+    </div>
+
+    <div class="dish_card">
+      <img src="https://b.zmtcdn.com/data/pictures/7/19404547/9e3d619f5d73a8b1a00e815b80d45a1d_o2_featured_v2.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*" alt="Haryana Mishthan Bhandar- HMB">
+      <h3>Haryana Mishthan Bhandar- HMB</h3>
+      <p class="price">₹429</p>
+      <button class="btn_add">Add to Cart</button>
+    </div>
+
+    <div class="dish_card">
+      <img src="https://b.zmtcdn.com/data/pictures/0/18999560/376f7276959082c9e7e4faab573ccb58_o2_featured_v2.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*" alt="Pizza Wings">
+      <h3>Pizza Wings</h3>
+      <p class="price">₹499</p>
+      <button class="btn_add">Add to Cart</button>
+    </div>
+
+    <div class="dish_card">
+      <img src="https://b.zmtcdn.com/data/pictures/3/20364843/327ac4b48afbe098ee401156e1fe26db_o2_featured_v2.jpg" alt="Fitness Bar The Juice Bar">
+      <h3>Fitness Bar The Juice Bar</h3>
+      <p class="price">₹249</p>
+      <button class="btn_add">Add to Cart</button>
+    </div>
+
+    <div class="dish_card">
+      <img src="https://b.zmtcdn.com/data/pictures/3/20646393/53971886201ffc80686fa1eb76363058_o2_featured_v2.jpg" alt="Anna Madras Dosa">
+      <h3>Anna Madras Dosa</h3>
+      <p class="price">₹450</p>
+      <button class="btn_add">Add to Cart</button>
+    </div>
+
+    <div class="dish_card">
+      <img src="https://b.zmtcdn.com/data/pictures/chains/3/19107363/72e334f98bd9fa469c6768e63b656456_featured_v2.jpg" alt="KFC">
+      <h3>KFC</h3>
+      <p class="price">₹420</p>
+      <button class="btn_add">Add to Cart</button>
+    </div>
+
+    <div class="dish_card">
+      <img src="https://b.zmtcdn.com/data/pictures/chains/3/19008053/985f9afa427b87da70686f68e359d6a0_featured_v2.jpg" alt="Milk Point">
+      <h3>Milk Point</h3>
+      <p class="price">₹279</p>
+      <button class="btn_add">Add to Cart</button>
+    </div>
+
+    <div class="dish_card">
+      <img src="https://b.zmtcdn.com/data/pictures/4/21281034/87cac5d52ea99417e7421d4beebbd781_o2_featured_v2.jpg" alt="Oreos Cafe & Bistro">
+      <h3>Oreos Cafe & Bistro</h3>
+      <p class="price">₹559</p>
+      <button class="btn_add">Add to Cart</button>
+    </div>
+
+    <div class="dish_card">
+      <img src="https://b.zmtcdn.com/data/pictures/5/21250865/bedcf3220166bc8b1c70ae615509f390_o2_featured_v2.jpg" alt="Hashtag">
+      <h3>Hashtag</h3>
+      <p class="price">₹279</p>
+      <button class="btn_add">Add to Cart</button>
+    </div>
+
+    <div class="dish_card">
+      <img src="https://b.zmtcdn.com/data/pictures/3/21423673/9958d0e0f5ef50f9eb80027bd1415d76_o2_featured_v2.jpg" alt="Grilliyo">
+      <h3>Grilliyo</h3>
+      <p class="price">₹329</p>
+      <button class="btn_add">Add to Cart</button>
+    </div>
+
+  </div>
+</section>
+
+<hr style="border: 2px solid tomato;">
+<hr style="border: 2px solid tomato;">
+
+
+
+<section class="popular_dishes">
+  <h2>Dining out</h2>
+  <div class="dishes_grid">
+
+    <div class="dish_card">
+      <img src="https://b.zmtcdn.com/data/pictures/3/20863533/3ad7a12bd1f6fbf993708a3a8498369f_featured_v2.jpg?output-format=webp" alt="Cé La Vie Kitchen & Bar">
+      <h3>Cé La Vie Kitchen & Bar</h3>
+      <p class="price">₹2200</p>
+      <button class="btn_add">Add to Cart</button>
+    </div>
+
+    <div class="dish_card">
+      <img src="https://b.zmtcdn.com/data/pictures/0/18382360/46e428b78f369f8fa533cfe29029d0e1_featured_v2.jpg?output-format=webp" alt="Local">
+      <h3>Local</h3>
+      <p class="price">₹2599</p>
+      <button class="btn_add">Add to Cart</button>
+    </div>
+
+    <div class="dish_card">
+      <img src="https://b.zmtcdn.com/data/pictures/0/21844770/149df946b980db41c68a11f906d840da_featured_v2.jpg?output-format=webp" alt="Ivoryy Fusion Bar">
+      <h3>Ivoryy Fusion Bar</h3>
+      <p class="price">₹3599</p>
+      <button class="btn_add">Add to Cart</button>
+    </div>
+
+    <div class="dish_card">
+      <img src="https://b.zmtcdn.com/data/pictures/3/20964973/60c85363f7b9c63afacd5bb551b50df6_featured_v2.jpg?output-format=webp" alt="Plum Coffee and Cocktails">
+      <h3>Plum Coffee and Cocktails</h3>
+      <p class="price">₹2000</p>
+      <button class="btn_add">Add to Cart</button>
+    </div>
+
+    <div class="dish_card">
+      <img src="https://b.zmtcdn.com/data/pictures/4/19952834/0987cfcf6c75ea86e8b71f25ed4b773e_featured_v2.jpg" alt="Chido">
+      <h3>Chido</h3>
+      <p class="price">₹2499</p>
+      <button class="btn_add">Add to Cart</button>
+    </div>
+
+    <div class="dish_card">
+      <img src="https://b.zmtcdn.com/data/pictures/6/19129306/33cab35b72c7bfd1d1641ce440bb068f_featured_v2.jpg" alt="Yeti - The Himalayan Kitchen">
+      <h3>Yeti - The Himalayan Kitchen</h3>
+      <p class="price">₹2200</p>
+      <button class="btn_add">Add to Cart</button>
+    </div>
+
+    <div class="dish_card">
+      <img src="https://b.zmtcdn.com/data/pictures/4/21760314/52f7b96d8abd69344dd3e94df0f01b05_featured_v2.jpg" alt="Havemore - Bikaner House">
+      <h3>Havemore - Bikaner House</h3>
+      <p class="price">₹1999</p>
+      <button class="btn_add">Add to Cart</button>
+    </div>
+
+    <div class="dish_card">
+      <img src="https://b.zmtcdn.com/data/pictures/1/18423151/e6cbcb3162c11adcf58677f1c4110d9b_featured_v2.jpg">
+      <h3>The Darzi Bar & Kitchen</h3>
+      <p class="price">₹4200</p>
+      <button class="btn_add">Add to Cart</button>
+    </div>
+
+    <div class="dish_card">
+      <img src="https://b.zmtcdn.com/data/pictures/0/5210/41e4c0bb5277eb4de9edff584071ab6c_featured_v2.jpg">
+      <h3>64/6 - Country Inn & Suites By Radisson</h3>
+      <p class="price">₹5499</p>
+      <button class="btn_add">Add to Cart</button>
+    </div>
+
+    <div class="dish_card">
+      <img src="https://b.zmtcdn.com/data/pictures/0/20590850/5c6f8a7899dc8d296cff6848a1800d70_featured_v2.jpg" alt="Xero Courtyard">
+      <h3>Xero Courtyard</h3>
+      <p class="price">₹2600</p>
+      <button class="btn_add">Add to Cart</button>
+    </div>
+
+    <div class="dish_card">
+      <img src="https://b.zmtcdn.com/data/pictures/chains/0/18665760/727f9d7d2b6b103d89d24d1d2b79ea27_featured_v2.jpg">
+      <h3>Kiara Soul Kitchen
+</h3>
+      <p class="price">₹2700</p>
+      <button class="btn_add">Add to Cart</button>
+    </div>
+
+    <div class="dish_card">
+      <img src="https://b.zmtcdn.com/data/pictures/3/20805523/c78bae8da4308170b9f0da9e75aa4876_featured_v2.jpg">
+      <h3>Dicha</h3>
+      <p class="price">₹1200</p>
+      <button class="btn_add">Add to Cart</button>
+    </div>
+
+  </div>
+</section>
+
+<hr style="border: 2px solid tomato;">
+<hr style="border: 2px solid tomato;">
+
+  <footer>
+    <p>© 2025 Snackzy | Made with ❤️ by Food Lovers</p>
+  </footer>
+
+  <hr style="border: 2px solid tomato;">
+<hr style="border: 2px solid tomato;">
 
 </body>
 </html>

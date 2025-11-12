@@ -1,0 +1,247 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.navbar {
+  background: linear-gradient(90deg, #ffb8b8, #ffcece, #ffe3e3);
+  padding: 10px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  
+}
+
+.space {
+  height: 60px;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #ff4b5c;
+  font-family: Arial;
+}
+
+.nav_links a {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 10px;
+  font-family: Arial;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav_links a:hover {
+  color: #ff4b5c;
+  border: 2px solid #ff4b5c;
+  border-radius: 10px;
+}
+
+.active {
+  color: #ff4b5c;
+  border-bottom: 2px solid #ff4b5c;
+}
+
+.btn_login {
+  background-color: #ff4b5c;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-login:hover {
+  background-color: #ff6f6f;
+}
+
+
+.welcome_section {
+  background: linear-gradient(to right, #ffe3e3, #ffd6d6, #fff5f5);
+  padding: 40px 10px;
+  text-align: center;
+}
+
+.welcome_content h1 {
+  font-size: 36px;
+  color: #ff4b5c;
+  margin-bottom: 10px;
+}
+
+.welcome_content span {
+  color: #ff3030;
+}
+
+.welcome_content p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.btn_group a {
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  margin: 0 8px;
+  font-weight: bold;
+}
+
+.btn_order {
+  background-color: #ff4b5c;
+  color: white;
+}
+
+.btn_order:hover {
+  background-color: #ff6f6f;
+}
+
+.btn_explore {
+  background-color: white;
+  color: #ff4b5c;
+  border: 3px solid #ff4b5c;
+}
+
+.btn_explore:hover {
+  background-color: #ff4b5c;
+  color: white;
+}
+
+
+.mini_dishes {
+  background-color: #fff7f7;
+  padding: 15px 10px;
+  text-align: center;
+}
+
+.dish_grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.dish_item {
+  width: 110px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.dish_item img {
+  width: 100%;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.dish_item p {
+  font-size: 13px;
+  color: #ff4b5c;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.dish_item:hover {
+  transform: scale(1.5);
+}
+
+
+.popular_dishes {
+  background-color: #fff6f6;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.popular_dishes h2 {
+  font-size: 30px;
+  color: #ff4b5c;
+  margin-bottom: 30px;
+}
+
+.popular_dishes h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #ff4b5c;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.dishes_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+.dish_card {
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 260px;
+  padding: 15px;
+  border-radius: 8px;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.dish_card:hover {
+  transform: scale(1.05);
+}
+
+.dish_card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.dish_card h3 {
+  color: #ff4b5c;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.dish_card .price {
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.btn_add {
+  background-color: #ff4b5c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.btn_add:hover {
+  background-color: #ff6f6f;
+}
+
+
+footer {
+  background-color: #ffb8b8;
+  color: #333;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
+  font-size: 14px;
+}

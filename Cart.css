@@ -1,0 +1,62 @@
+*{
+    border-radius: 8px;
+}
+.navbar {
+    background: linear-gradient(90deg, #ffb8b8, #ffcece, #ffe3e3);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff4b5c;
+    font-family: Arial, sans-serif;
+}
+
+.nav_links {
+    text-align: center;
+}
+
+.nav_links a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav_links a:hover {
+    color: #ff4b5c;
+    border-bottom: 2px solid #ff4b5c;
+}
+
+.active {
+    color: #ff4b5c;
+    border-bottom: 2px solid #ff4b5c;
+}
+
+.btn_login {
+    background-color: #ff4b5c;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn_login:hover {
+    background-color: #ff6f6f;
+}
+.Welcome_page{
+    
+    background-color: #ffcece;
+
+}
