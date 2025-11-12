@@ -1,10 +1,45 @@
+/* Reset default spacing and set global font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 
+/* Navbar styling */
+.navbar {
+    background: linear-gradient(90deg, #ffb8b8, #ffcece, #ffe3e3);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo style */
 .logo {
     font-size: 24px;
     font-weight: bold;
     color: #ff4b5c;
-    font-family: Arial, sans-serif;
 }
+
+/* Back button */
+.back-btn {
+    background-color: #ff4b5c;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #ff2e3d;
+}
+
+/* Login box */
 .login-container {
     width: 350px;
     margin: 80px auto;
@@ -15,11 +50,12 @@
     text-align: center;
 }
 
+/* Heading */
 .login-container h2 {
     color: #ff4b5c;
     margin-bottom: 20px;
-    font-family: Arial, sans-serif;
 }
+
 
 .login-container input {
     width: 90%;
@@ -28,11 +64,26 @@
     border: 1px solid #ccc;
     border-radius: 6px;
     outline: none;
-    font-family: Arial, sans-serif;
+    transition: border 0.3s ease;
 }
 
 .login-container input:focus {
     border-color: #ff4b5c;
+}
+
+.btn-login {
+    background-color: #ff4b5c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #ff2e3d;
 }
 
 .login-container p {
@@ -44,4 +95,8 @@
     color: #ff4b5c;
     text-decoration: none;
     font-weight: bold;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
 }

@@ -10,8 +10,7 @@
 
     <div class="navbar">
         <div class="logo">Snackzy</div>
-
-        
+        <button class="back-btn" onclick="goBack()">← Back</button>
     </div>
 
     <div class="login-container">
@@ -23,6 +22,12 @@
             <p>Don't have an account? <a href="#">Sign up</a></p>
         </form>
     </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 
 </body>
 </html>
