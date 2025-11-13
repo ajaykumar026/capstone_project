@@ -1,4 +1,4 @@
-/* Reset default spacing and set global font */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,6 @@
     font-family: Arial, sans-serif;
 }
 
-/* Navbar styling */
 .navbar {
     background: linear-gradient(90deg, #ffb8b8, #ffcece, #ffe3e3);
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -16,14 +15,13 @@
     align-items: center;
 }
 
-/* Logo style */
 .logo {
     font-size: 24px;
     font-weight: bold;
     color: #ff4b5c;
+    text-decoration: none;
 }
 
-/* Back button */
 .back-btn {
     background-color: #ff4b5c;
     color: white;
@@ -39,7 +37,6 @@
     background-color: #ff2e3d;
 }
 
-/* Login box */
 .login-container {
     width: 350px;
     margin: 80px auto;
@@ -50,7 +47,6 @@
     text-align: center;
 }
 
-/* Heading */
 .login-container h2 {
     color: #ff4b5c;
     margin-bottom: 20px;
