@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snackzy Food Website</title>
-    
+    <title>Snackzy Cart</title>
     <link rel="stylesheet" href="Cart.css">
 </head>
 <body>
@@ -20,11 +19,20 @@
             <a href="Contact.html">Contact</a>
         </div>
 
-        <a href="login.html"><button  class="btn_login">Login</button></a>
+        <a href="login.html"><button class="btn_login">Login</button></a>
     </div>
-    <div class="Welcome_page">
-      <h2 style="text-align:center; margin-top: 50px;">Welcome to Snackzy 🍕</h2>
-      <p style="text-align:center;">Your favorite food delivered hot & fresh!</p>
+
+    <div class="cart-container">
+        <h1 class="title">Your Cart</h1>
+
+        <!-- EMPTY CART MESSAGE -->
+        <div class="empty-cart">
+            <img src="empty.png" class="empty-img" alt="Empty Cart">
+            <h2>Your cart is empty</h2>
+            <p>Add some delicious dishes to continue!</p>
+            <a href="Dishes.html"><button class="start-btn">Browse Dishes</button></a>
+        </div>
+
     </div>
 
 </body>
