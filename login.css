@@ -7,12 +7,22 @@
 }
 
 .navbar {
-    background: linear-gradient(90deg, #ffb8b8, #ffcece, #ffe3e3);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    padding: 15px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background: linear-gradient(90deg, #ffb8b8, #ffcece, #ffe3e3);
+  padding: 10px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  
+}
+
+.space {
+  height: 60px;
 }
 
 .logo {
@@ -67,7 +77,9 @@
     border-color: #ff4b5c;
 }
 
-.btn-login {
+
+
+.back-btn {
     background-color: #ff4b5c;
     color: white;
     padding: 10px 20px;
@@ -76,6 +88,9 @@
     cursor: pointer;
     margin-top: 10px;
     transition: background 0.3s ease;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
 }
 
 .btn-login:hover {
@@ -96,3 +111,4 @@
 .login-container a:hover {
     text-decoration: underline;
 }
+
