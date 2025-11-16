@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-/* Navbar */
+
 .navbar {
   background: linear-gradient(90deg, #ffb8b8, #ffcece, #ffe3e3);
   padding: 10px 20px;
@@ -60,7 +60,7 @@
   color: #ff4b5c;
 }
 
-/* Welcome Section */
+
 .space {
   height: 60px;
 }
@@ -101,7 +101,7 @@
   background: white;
 }
 
-/* Dishes Section */
+
 .mini_dishes {
   background-color: #fff7f7;
   padding: 20px;
@@ -129,7 +129,7 @@
   transform: scale(1.2);
 }
 
-/* Popular Dishes */
+
 .popular_dishes {
   padding: 40px 20px;
   background: #fff6f6;
@@ -166,7 +166,7 @@
   margin-bottom: 10px;
 }
 
-/* Footer */
+
 footer {
   background-color: #ffb8b8;
   text-align: center;
@@ -174,7 +174,7 @@ footer {
   font-weight: bold;
 }
 
-/* 🔹 RESPONSIVE DESIGN */
+
 @media (max-width: 768px) {
   .nav_links {
     display: none;
@@ -242,7 +242,7 @@ footer {
     padding: 10px;
   }
 }
-/* Reset + base styling */
+
 * {
   margin: 0;
   padding: 0;
@@ -251,10 +251,10 @@ footer {
 }
 
 body {
-  margin-top: 70px; /* To avoid overlap with fixed navbar */
+  margin-top: 70px;
 }
 
-/* Navbar container */
+
 .navbar {
   background: linear-gradient(90deg, #ffb8b8, #ffcece, #ffe3e3);
   padding: 10px 20px;
@@ -269,7 +269,7 @@ body {
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
-/* Logo */
+
 .logo {
   font-size: 26px;
   font-weight: bold;
@@ -277,7 +277,7 @@ body {
   letter-spacing: 1px;
 }
 
-/* Nav links */
+
 .nav_links {
   display: flex;
   gap: 20px;
@@ -299,7 +299,7 @@ body {
   border-bottom: 2px solid #ff4b5c;
 }
 
-/* Login button (desktop only) */
+
 .btn_login {
   background-color: #ff4b5c;
   color: white;
@@ -315,7 +315,7 @@ body {
   background-color: #ff6b6b;
 }
 
-/* Hamburger icon */
+
 .menu-icon {
   display: none;
   font-size: 28px;
@@ -323,12 +323,12 @@ body {
   color: #ff4b5c;
 }
 
-/* Hide mobile login link by default */
+
 .mobile-login {
   display: none;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .menu-icon {
     display: block;
@@ -362,7 +362,7 @@ body {
   }
 }
 
-/* Extra small devices (phones <480px) */
+
 @media (max-width: 480px) {
   .logo {
     font-size: 22px;

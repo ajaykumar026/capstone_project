@@ -93,7 +93,7 @@
     margin: 40px;
 }
 
-/* LEFT FORM */
+
 .help_form {
     width: 60%;
     background: #fff;
@@ -107,7 +107,7 @@
     color: #ff4b5c;
 }
 
-/* Inputs */
+
 .help_form input, 
 .help_form textarea {
     width: 100%;
@@ -123,7 +123,7 @@
     resize: none;
 }
 
-/* Dropdown */
+
 .help_dropdown {
     margin-bottom: 18px;
     position: relative;
@@ -139,7 +139,7 @@
     background: #fff;
 }
 
-/* Dropdown content */
+
 .dropdown_content {
     display: none;
     position: absolute;
@@ -163,12 +163,12 @@
     background: #fce4e4;
 }
 
-/* Hover show */
+
 .help_dropdown:hover .dropdown_content {
     display: block;
 }
 
-/* Submit button */
+
 .submit_btn {
     width: 100%;
     padding: 14px;
@@ -185,7 +185,7 @@
 }
 
 
-/* RIGHT SIDE BOX */
+
 .emergency_box {
     width: 35%;
     background: #fff;

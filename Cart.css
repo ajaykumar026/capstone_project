@@ -5,7 +5,7 @@
     font-family: Arial;
 }
 
-/* NAVBAR */
+
 .navbar {
     background: linear-gradient(90deg, #ffb8b8, #ffcece, #ffe3e3);
     padding: 15px 40px;
@@ -42,7 +42,7 @@
     cursor: pointer;
 }
 
-/* CART PAGE */
+
 body {
     background: #fff7f7;
 }
@@ -59,7 +59,7 @@ body {
     color: #444;
 }
 
-/* EMPTY CART BOX */
+
 .empty-cart {
     text-align: center;
     background: white;
