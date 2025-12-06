@@ -293,3 +293,96 @@
     font-size: 13px;
   }
 }
+
+
+
+body.dark-mode {
+  background-color: #121212;
+  color: wheat;
+}
+
+.dark-mode .navbar {
+  background: linear-gradient(90deg, #222, #333, #444);
+}
+
+.dark-mode .welcome_section {
+  background: linear-gradient(to right, #222, #333, #444);
+}
+
+.dark-mode .mini_dishes {
+  background-color: #1e1e1e;
+}
+
+.dark-mode .popular_dishes {
+  background-color: #1e1e1e;
+}
+
+.dark-mode .dish_card {
+  background-color: #222;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+
+.dark-mode .footer {
+  background-color: #222;
+  color: #f5f5f5;
+}
+
+.btn_dark {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.btn_dark:hover {
+  background-color: #333;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p,
+.dark-mode a {
+  color: wheat !important;
+}
+
+.dark-mode .price {
+  color: wheat !important;
+}
+
+
+
+
+/* 🔥 Closing Sale Timer */
+.sale_timer_section {
+  background-color: #ffe3e3;
+  text-align: center;
+  padding: 15px 10px;
+}
+
+#saleTitle {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ff4b5c;
+  margin-bottom: 5px;
+}
+
+#saleTimerText {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Dark mode for timer */
+.dark-mode .sale_timer_section {
+  background-color: #222;
+}
+
+.dark-mode #saleTitle,
+.dark-mode #saleTimerText {
+  color: wheat;
+}

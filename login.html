@@ -10,20 +10,35 @@
 
     <div class="navbar">
         <a href="index.html" class="logo">Snackzy</a>
-        <a href="index.html" class="back-btn">← Back</a>
+
+        <ul>
+            <button class="btn_dark" onclick="toggleDarkMode()">Dark Mode</button>
+            <a href="index.html" class="back-btn">← Back</a>
+        </ul>
     </div>
 
     <div class="login-container">
         <h2>Login to Snackzy</h2>
+
         <form>
+
             <input type="text" placeholder="Username or Email" required>
-            <input type="password" placeholder="Password" required>
+
+            <!-- IMPORTANT: Add ID for JS -->
+            <input id="password" type="password" placeholder="Password" required>
+
+            <!-- NEW: Show / Hide Password -->
+            <label style="display:block; margin:8px 0;">
+                <input type="checkbox" onclick="togglePassword()"> Show Password
+            </label>
+
             <button type="submit" class="btn-login">Login</button>
+
             <p>Don't have an account? <a href="#">Sign up</a></p>
+
         </form>
     </div>
 
-
-
+    <script src="login.js"></script>
 </body>
 </html>

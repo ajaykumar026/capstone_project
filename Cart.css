@@ -138,3 +138,45 @@ body {
     font-size: 13px;
   }
 }
+
+body.dark-mode {
+    background-color: #121212;
+    color: wheat;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p,
+.dark-mode a {
+    color: wheat !important;
+}
+
+.dark-mode .navbar {
+    background: linear-gradient(90deg, #222, #333, #444);
+}
+
+
+.dark-mode .empty-cart {
+    background: #222;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+}
+
+.dark-mode footer {
+    background: #222;
+}
+
+.btn_dark {
+    background-color: black;
+    color: wheat;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.btn_dark:hover {
+    background-color: #333;
+}

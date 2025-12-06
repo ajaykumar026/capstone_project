@@ -272,3 +272,131 @@
     font-size: 13px;
   }
 }
+
+
+
+
+
+/* 🌙 Dark Mode Base */
+body.dark-mode {
+  background-color: #121212;
+  color: wheat;
+}
+
+/* Make all text wheat */
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p,
+.dark-mode a {
+  color: wheat !important;
+}
+
+.dark-mode .price {
+  color: wheat !important;
+}
+
+/* Cards in dark mode */
+.dark-mode .dish_card {
+  background-color: #222;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+
+/* Navbar dark */
+.dark-mode .navbar {
+  background: linear-gradient(90deg, #222, #333, #444);
+}
+
+/* Welcome + sections dark */
+.dark-mode .Welcome_page {
+  background: linear-gradient(to right, #222, #333, #444);
+}
+
+.dark-mode .mini_dishes {
+  background-color: #1e1e1e;
+}
+
+.dark-mode .popular_dishes {
+  background-color: #1e1e1e;
+}
+
+/* Footer dark */
+.dark-mode .footer {
+  background-color: #222;
+  color: wheat;
+}
+
+/* 🌙 Dark Mode button */
+.btn_dark {
+  background-color: black;
+  color: wheat;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.btn_dark:hover {
+  background-color: #333;
+}
+
+
+
+
+/* 🌙 Dark Mode Base */
+body.dark-mode {
+  background-color: #121212;
+  color: wheat;
+}
+
+/* Make text wheat */
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p,
+.dark-mode a {
+  color: wheat !important;
+}
+
+.dark-mode .navbar {
+  background: linear-gradient(90deg, #222, #333, #444);
+}
+
+
+.dark-mode .Welcome_page {
+  background-color: #333;
+}
+
+.dark-mode .contact_header {
+  background-color: #222;
+  background-image: none; 
+}
+
+
+.dark-mode .help_form,
+.dark-mode .emergency_box {
+  background: #222;
+  box-shadow: 0 0 15px rgba(0,0,0,0.6);
+}
+
+.dark-mode .footer {
+  background-color: #222;
+  color: wheat;
+}
+
+.btn_dark {
+  background-color: black;
+  color: wheat;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.btn_dark:hover {
+  background-color: #333;
+}
